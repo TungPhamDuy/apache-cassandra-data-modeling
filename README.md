@@ -111,7 +111,3 @@ The notebook includes sample queries executed against the populated Cassandra ta
 ## Contributing
 
 Feel free to fork this repository, submit pull requests, or open issues if you have suggestions or find bugs.
-
-## License
-
-This project is licensed under the [LICENSE_TYPE] License - see the `LICENSE` file for details.
