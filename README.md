@@ -21,8 +21,8 @@ The dataset used in this project consists of event logs from a music streaming a
 
 ## Project Structure
 
-The repository is organized as follows:
-.
+The repository is organized as follows:  
+.  
 ├── cassandra_data_modeling.ipynb  # Main Jupyter Notebook containing the project code  
 ├── event_datafile_new.csv/        # Directory containing the raw event data (e.g., event_datafile_new.csv)  
 ├── images/                        # Directory for screenshots or diagrams  
