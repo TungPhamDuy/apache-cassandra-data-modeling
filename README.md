@@ -1,25 +1,25 @@
 #   Apache Cassandra Data Modeling Project - Data Engineering
 
-## Project Overview
+## Project overview
 
 This project focuses on designing and implementing an optimized data model for Apache Cassandra, a NoSQL column-family database, to support analytics for a music streaming application. The goal is to efficiently store and query user activity data (e.g., listening history, session details) that was previously stored in a messy CSV format.
 
 This project was completed as part of the **Udacity Data Engineering with Microsoft Azure Nanodegree Program**.
 
-## Problem Statement
+## Problem statement
 
 A fictional music streaming company, "Sparkify," stores its user activity data in a single CSV file, which is inefficient for analytical queries. The task is to:
 1.  **Extract:** Read raw event data from the CSV file.
 2.  **Transform:** Process and clean the data.
 3.  **Load:** Ingest the cleaned data into an Apache Cassandra database, ensuring tables are designed to answer specific analytical questions efficiently.
 
-## Data Source
+## Data source
 
 The dataset used in this project consists of event logs from a music streaming application, similar to the one provided by Udacity for the Data Engineering Nanodegree.
 * **Original Data:** Each row in the CSV represents a single event (e.g., a song played).
 * **Key Information:** Includes details about the user, session, song, artist, and timestamp.
 
-## Project Structure
+## Project structure
 
 The repository is organized as follows:  
 .  
@@ -29,7 +29,7 @@ The repository is organized as follows:
 ├── README.md                      # This file  
 └── requirements.txt               # (Optional) For listing Python dependencies  
 
-## Key Technologies Used
+## Key technologies used
 
 * **Python 3:** The primary programming language for data processing and database interaction.
 * **Apache Cassandra:** The NoSQL database for storing modeled data.
@@ -37,7 +37,7 @@ The repository is organized as follows:
 * **Cassandra Driver for Python:** To connect and interact with Cassandra.
 * **Jupyter Notebook:** For developing and showcasing the data modeling process.
 
-## Data Modeling & Design Choices
+## Data modeling & Design choices
 
 The core of this project lies in designing Cassandra tables that are optimized for specific queries. Unlike relational databases, Cassandra favors denormalization and query-first design.
 
@@ -63,7 +63,7 @@ The ETL (Extract, Transform, Load) pipeline implemented in the Jupyter Notebook 
     * Performs any necessary data type conversions.
 3.  **Load:** Connects to the Apache Cassandra cluster, creates a keyspace and the designed tables, and then inserts the transformed data into the respective tables. Each insertion is optimized for Cassandra's write patterns.
 
-## How to Run the Project
+## How to run the project
 
 To run this project on your local machine:
 
@@ -97,11 +97,11 @@ To run this project on your local machine:
     * Run the ETL process to load data.
     * Execute example queries to verify the data model.
 
-## Results & Verification
+## Results
 
 The notebook includes sample queries executed against the populated Cassandra tables to demonstrate that the data model can efficiently answer the specified analytical questions. The output of these queries verifies the successful loading and retrieval of data as per the design.
 
-## Future Improvements
+## Future improvements
 
 * Implement more robust error handling in the ETL pipeline.
 * Explore advanced Cassandra features like secondary indexes (if query patterns require it) or user-defined types (UDTs).
